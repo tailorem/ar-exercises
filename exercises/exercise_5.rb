@@ -10,7 +10,15 @@ puts "----------"
 # Your code goes here ...
 
 @total_revenue = Store.sum "annual_revenue"
+@number_of_stores = Store.count
+@average_revenue = @total_revenue / @number_of_stores
+@millionaires = Store.where("annual_revenue >= 1000000").count
+
+# Outputs
 pp "Company annual revenue: #{@total_revenue}"
+pp "Company average revenue per store: #{@average_revenue}"
+pp "Stores with annual revenue of $1,000,000+: #{@millionaires}"
+
 
 # Output the total revenue for the entire company (all stores), using Active Record's .sum calculation method.
 # On the next line, also output the average annual revenue for all stores.
