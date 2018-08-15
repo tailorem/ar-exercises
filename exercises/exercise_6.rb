@@ -11,14 +11,14 @@ puts "----------"
 # Your code goes here ...
 
 # pp Employee.column_names
-@store1.employees.create(first_name: "Taylour", last_name: "Em", hourly_rate: 20)
-@store1.employees.create(first_name: "Kris", last_name: "K", hourly_rate: 25)
-@store1.employees.create(first_name: "Hillary", last_name: "S", hourly_rate: 15)
-@store1.employees.create(first_name: "Ivy", last_name: "C", hourly_rate: 15)
+@store1.employees.create(first_name: "Taylour", last_name: "Em", hourly_rate: 60)
+@store1.employees.create(first_name: "Kris", last_name: "K", hourly_rate: 100)
+@store1.employees.create(first_name: "Hillary", last_name: "S", hourly_rate: 60)
+@store1.employees.create(first_name: "Ivy", last_name: "C", hourly_rate: 60)
 
-@store2.employees.create(first_name: "Rowan", last_name: "G", hourly_rate: 22)
-@store2.employees.create(first_name: "Phil", last_name: "K", hourly_rate: 30)
-@store2.employees.create(first_name: "Carli", last_name: "B", hourly_rate: 15)
+@store2.employees.create(first_name: "Rowan", last_name: "G", hourly_rate: 80)
+@store2.employees.create(first_name: "Phil", last_name: "K", hourly_rate: 120)
+@store2.employees.create(first_name: "Carli", last_name: "B", hourly_rate: 60)
 
 pp Employee.all
 
